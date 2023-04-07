@@ -734,7 +734,6 @@ WHQbtfyELS.getInstance();
 $('#videowrap').attr('class', 'col-md-9 col-lg-9');
 $('#chatwrap').attr('class', 'col-md-3 col-lg-3');
 $('#rightpane').attr('class', 'col-md-9 col-lg-9');
-$("#emotelistbtn").prependTo("#chatline-wrapper");
 
 $('#videowrap:parent').each(function () {
     $(this).insertBefore($(this).prev('#chatwrap'));
@@ -744,11 +743,7 @@ $('#rightcontrols:parent').each(function () {
     $(this).insertBefore($(this).prev('#leftcontrols'));
 });
 
-$("#emotelistbtn").prependTo("#chatline-wrapper");
-
 $('#rightcontrols').attr('class', 'col-md-9 col-lg-9');
 $('#leftcontrols').attr('class', 'col-md-3 col-lg-3');
-
-$("#emotelistbtn").prependTo("#chatline-wrapper");
 
 $('#leftpane').remove();
