@@ -751,5 +751,4 @@ $('#rightcontrols:parent').each(function () {
     $(this).insertBefore($(this).prev('#leftcontrols'));
 });
 
-var videoHeight = $("#videowrap").height();
-$("#messagebuffer").height(videoHeight);
+window.dispatchEvent(new Event('resize'));
