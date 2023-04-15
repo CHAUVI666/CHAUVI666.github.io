@@ -747,3 +747,5 @@ $('#rightcontrols').attr('class', 'col-md-9 col-lg-9');
 $('#leftcontrols').attr('class', 'col-md-3 col-lg-3');
 
 $('#leftpane').remove();
+
+$("#messagebuffer").css("height", "100%");
