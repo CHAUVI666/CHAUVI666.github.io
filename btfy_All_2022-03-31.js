@@ -735,6 +735,12 @@ $('#videowrap').attr('class', 'col-md-9 col-lg-9');
 $('#chatwrap').attr('class', 'col-md-3 col-lg-3');
 $('#rightpane').attr('class', 'col-md-9 col-lg-9');
 
+$('#rightcontrols').attr('class', 'col-md-9 col-lg-9');
+$('#leftcontrols').attr('class', 'col-md-3 col-lg-3');
+$("#messagebuffer").css("height", "100%");
+
+$('#leftpane').remove();
+
 $('#videowrap:parent').each(function () {
     $(this).insertBefore($(this).prev('#chatwrap'));
 });
@@ -742,10 +748,3 @@ $('#videowrap:parent').each(function () {
 $('#rightcontrols:parent').each(function () {
     $(this).insertBefore($(this).prev('#leftcontrols'));
 });
-
-$('#rightcontrols').attr('class', 'col-md-9 col-lg-9');
-$('#leftcontrols').attr('class', 'col-md-3 col-lg-3');
-
-$('#leftpane').remove();
-
-$("#messagebuffer").css("height", "100%");
